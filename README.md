@@ -5,7 +5,7 @@ Responsive media gallery with advanced banner loade
 
 ### Templating - Wrapper
 
-'''html
+```html
 <div class="widget-media-gallery media-gallery">
 
   % SOCIAL SHARE BLOCK %
@@ -17,11 +17,11 @@ Responsive media gallery with advanced banner loade
   
   
 </div>
-'''
+```
 
 ### Templating - Item
 
-'''html
+```html
 <div class="item">
   <img class="item-image lazy-gallery" data-original="http://placehold.it/800x600" alt="" />
   <div class="thumb">
@@ -36,26 +36,26 @@ Responsive media gallery with advanced banner loade
     </p>
   </div>
 </div>
-'''
+```
 
 ### Initialization
 
-'''html
+```html
 $('.widget-media-gallery').mediaGallery({
   desktop: 1000,
   imgBasePath: "./images/media-gallery/",
   addTriggerCount: 3,
   addTriggerCountMob: 3,
 });
-'''
-#### Paremeters:
+```
+##### Paremeters:
 * desktop: Width transition point in pxsels. Width at which media gallery cross from the desktop to mobile.
 * imgBasePath: Relative path to the folder with images.
 * addTriggerCount: Count of trigger actions before banner is loaded on desktop
 * addTriggerCountMob: Count of trigger actions before banner is loaded on mobile devices
 
 ### Banner implementation
-'''javascript
+```javascript
 oxAsyncGallery = {
   asyncAdControlRender: function(id, unit) {
     var unid = "#" + id + "-" + unit;
@@ -63,7 +63,7 @@ oxAsyncGallery = {
     $(unid).html("<iframe width='300' height='250' framespacing='0' frameborder='no' scrolling='no' src='http://lorempixel.com/g/300/250?rnd=" + rnd + "'/></iframe>");
   }
 };
-'''
+```
 This example pull simple image (lorempixel.com/g/300/250) instead of pulling from real banner server.
 
 
