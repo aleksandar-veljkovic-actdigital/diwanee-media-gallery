@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Media Gallery</title>
+    <link type="text/css" rel="stylesheet" href="./bower_components/owlcarousel/owl-carousel/owl.carousel.css" media="all"> 
+    <link type="text/css" rel="stylesheet" href="./stylesheets/screen.css" media="all"> 
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      .widget-media-gallery {
+        width:98%;
+        margin: 1% 0 1% auto;
+        max-width: 650px;
+        position: relative;
+      }      
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Media Gallery</h1>
+
+
+      <!-- START :: MEDIA GALLERY -->
+      <div class="widget-media-gallery media-gallery">
+        <!-- SOCIAL SHARE BLOCK -->
+        <div class="media-gallery-social-wrapp">
+          <a id="ref_fb"  href="http://www.facebook.com/sharer.php?s=100&amp;p[title]={{ article.data.article_title }}&amp;p[summary]={{ article.data.teaser }}&amp;p[url]={{ baseUrl() }}/article/{{ slugCreate(article.data.path, article.id)|url_encode }}&amp;p[images][0]=" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=400,width=600');
+              return false;"><img src="./images/fb-like.png" alt=""/></a>
+          <a id="ref_tw" href="https://twitter.com/intent/tweet?text={{ article.data.article_title|url_encode }}&url=http://www.3a2ilati.com/article/'{{ url|url_encode }}">
+            <img src="./images/twitt-ico.png" alt=""/>
+          </a>
+          <a id="ref_gp" href="https://plus.google.com/share?url={{ baseUrl() }}/article/{{ slugCreate(article.data.path, article.id)|url_encode }}" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=400,width=600');
+              return false"><img src="./images/g-share.png" alt=""/></a>&nbsp;
+        </div>
+        <!-- eof social share block -->
+        <!-- MEDIA GALLERY ITEM -->
+        <div class="item">
+          <img class="item-image lazy-gallery" data-original="http://placehold.it/800x600" alt="" />
+          <div class="thumb">
+            <img class="lazy-gallery" data-original="http://placehold.it/200x100" alt="" />
+          </div>
+          <div class="caption">
+            <h3>
+              Test Title 1
+            </h3>
+            <p class="description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mi libero, aliquet sed leo eget, tincidunt facilisis augue. Aliquam consequat vulputate sem, a pulvinar neque imperdiet quis. Sed vulputate odio sit amet lacus ultricies tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed egestas posuere libero, sit amet porttitor sem sodales quis. Nullam dui purus, porttitor ut lobortis id, feugiat sit amet urna. Cras in laoreet arcu, imperdiet imperdiet erat. In nec sagittis quam, non euismod leo. Vivamus ut dolor id velit ultrices eleifend eu sed ipsum. Pellentesque scelerisque vel odio sed vehicula. Ut sed augue auctor lectus mollis eleifend quis interdum leo. Mauris et bibendum diam. Nunc vel posuere purus. Pellentesque magna turpis, sodales vel massa non, consequat cursus nunc. Praesent sit amet lobortis ipsum. Nunc vitae convallis metus.
+              Pellentesque rutrum consectetur hendrerit. Quisque ultrices mi vel lacus laoreet, eu consectetur nunc ornare. Cras quis congue turpis. Morbi a rhoncus sem. Pellentesque vitae consectetur velit, ac pretium libero. Duis eget facilisis justo. Donec commodo neque eget maximus facilisis. Phasellus ut ipsum eu mauris maximus ullamcorper ac nec est. Nunc laoreet fermentum sapien. Curabitur eu porta tellus. Nulla euismod nisi ac semper euismod. Ut at tempus elit. Vivamus eu dictum dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris convallis gravida lacus, eu faucibus nulla tincidunt sed.
+            </p>
+          </div>
+        </div>
+        <!-- eof meda gallery item -->
+        <!-- MEDIA GALLERY ITEM -->
+        <div class="item">
+          <img class="item-image lazy-gallery" data-original="http://placehold.it/800x600" alt="" />
+          <div class="thumb">
+            <img class="lazy-gallery" data-original="http://placehold.it/200x100" alt="" />
+          </div>
+          <div class="caption">
+            <h3>
+              Test Title 2
+            </h3>
+            <p class="description">
+              Quisque maximus maximus metus, id pulvinar dolor malesuada in. Vivamus laoreet est lorem, at tincidunt ligula ullamcorper at. Sed consectetur, nunc id egestas laoreet, nisl libero consequat lacus, sed interdum ligula mauris id nisl. Curabitur eget metus auctor, ultrices metus ut, cursus quam. Morbi elementum purus massa, a ornare dolor egestas vitae. Curabitur eu libero felis. Nam elementum felis id quam gravida bibendum. Quisque eros urna, porttitor nec pharetra eget, consectetur et est. Vestibulum non odio mauris. In sem risus, tincidunt nec est et, dictum ultricies lectus. Fusce mi tellus, iaculis quis nisl at, sagittis rutrum lectus. Curabitur sit amet nisi gravida, blandit velit eget, elementum ante. Mauris faucibus dolor lectus, a accumsan nunc eleifend ut. Sed turpis dolor, aliquet sed lacinia et, placerat sed felis.
+            </p>
+          </div>
+        </div>
+        <!-- eof meda gallery item -->
+        <!-- MEDIA GALLERY ITEM -->
+        <div class="item">
+          <img class="item-image lazy-gallery" data-original="http://placehold.it/800x600" alt="" />
+          <div class="thumb">
+            <img class="lazy-gallery" data-original="http://placehold.it/200x100" alt="" />
+          </div>
+          <div class="caption">
+            <h3>
+              Test Title 3
+            </h3>
+            <p class="description">
+              Donec nec magna sit amet ligula tincidunt faucibus non id diam. Integer dignissim ornare tortor vitae elementum. Duis imperdiet dictum libero vel feugiat. Mauris commodo vehicula vehicula. Nam consectetur, erat sed dignissim blandit, orci nibh volutpat libero, ac vulputate velit nunc at ipsum. 
+            </p>
+          </div>
+        </div>
+        <!-- eof meda gallery item -->
+      </div>
+      <!-- END :: media gallery -->
+
+      <!-- PUBLIC LIBRARY SCRIPTS -->
+      <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+      <script src="./bower_components/owlcarousel/owl-carousel/owl.carousel.min.js"></script>
+
+      <!-- CUSTOM SCRIPTS -->
+      <script src="./js/owl-carousel.rtl.js"></script>
+      <script src="./js/diwanee-fullscreen.js"></script>
+      <script src="./js/dynamic-line-height.js"></script>
+      <script src="./js/gallery-caption.js"></script>
+      <script src="./js/max-height-pct.js"></script>
+      <script src="./js/media-gallery.js"></script>
+
+      <!-- OPEN X IMPLEMENTATION REPLACEMENT -->
+      <script>
+            oxAsyncGallery = {
+              asyncAdControlRender: function(id, unit) {
+                var unid = "#" + id + "-" + unit;
+                var rnd = Math.floor((Math.random() * 100) + 1);
+                $(unid).html("<iframe width='300' height='250' framespacing='0' frameborder='no' scrolling='no' src='http://lorempixel.com/g/300/250?rnd=" + rnd + "'/></iframe>");
+              }
+            };
+      </script>
+
+      <!-- INITIALIZATIONS -->
+      <script>
+        // MEDIA GALLERU INITIALIZATION
+        $('.widget-media-gallery').mediaGallery({
+          desktop: 1000,
+          imgBasePath: "./images/media-gallery/",
+          addTriggerCount: 3,
+          addTriggerCountMob: 3,
+        });
+        // CUSTOM LAZY LOAD (original lazy load not working)
+        $("img.lazy-gallery").attr("src", "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC");
+        $(function() {
+          $("img.lazy-gallery").each(function(i, o) {
+            $(this).attr("src", $(this).data('original'));
+          });
+        });
+      </script> 
+
+    </div>
+  </body>
+</html>

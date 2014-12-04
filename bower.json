@@ -1,0 +1,23 @@
+{
+  "name": "Media Gallery",
+  "version": "1.0",
+  "authors": [
+    "Aleksandar Veljkovic <aleksandar.veljkovic@diwanee.com>"
+  ],
+  "description": "Diwanee Media Gallery Widget",
+  "main": "index.html",
+  "license": "Copyright Diwanee",
+  "homepage": "www.diwanee.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "owlcarousel": "~1.3.2"
+  }
+}
