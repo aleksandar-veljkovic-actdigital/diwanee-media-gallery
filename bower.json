@@ -1,14 +1,14 @@
 {
-  "name": "Media Gallery",
-  "version": "1.0",
+  "name": "Diwanee Media Gallery",
+  "version": "0.1",
   "authors": [
     "Aleksandar Veljkovic <aleksandar.veljkovic@diwanee.com>"
   ],
-  "description": "Diwanee Media Gallery Widget",
+  "description": "Media gallery Widget with banner implementation",
   "main": "index.html",
   "license": "Copyright Diwanee",
   "homepage": "www.diwanee.com",
-  "private": true,
+  "private": false,
   "ignore": [
     "**/.*",
     "node_modules",
@@ -21,3 +21,4 @@
     "owlcarousel": "~1.3.2"
   }
 }
+
